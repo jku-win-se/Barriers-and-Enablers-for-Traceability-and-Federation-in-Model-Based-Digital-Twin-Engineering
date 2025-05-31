@@ -12,4 +12,4 @@ This directory is the **single source of truth** for every DEF compiled during t
 - `DefTemplate-CheatSheet.pdf`: *One-page coding guide*
 - `Grey Literature Review - Assignments as Reviewer 1 and Reviewer 2.xlsx`: *Tracks who reviewed grey literature + conflict log.*
 - `Grey Literature Review - Tables and Results.xlsx`: *Results of the grey literature data.*
-- `Peer-Reviewed Literature Review - Assignments, Tables and Results.xlsx`: *Tracks who reviewed peer-reviewed literature + conflict log. Results of the peer-reviewed literature data.*
+- `Peer-Reviewed Literature Review - Assignments, Tables and Results.xlsx`: *Tracks who reviewed literature papers + conflict log. Results of the peer-reviewed literature data.*
