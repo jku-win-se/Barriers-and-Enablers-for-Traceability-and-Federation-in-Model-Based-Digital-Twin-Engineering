@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1000px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": 1, "label": "Conceptual Framework\nof Information Flow\nSynchronization\nThroughout the\nBuilding Lifecycle", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Conceptual Framework of Information Flow Synchronization Throughout the Building Lifecycle", "x": 0.5384270678495345, "y": 0.3287408876278843}, {"color": "#97c2fc", "id": 2, "label": "Model-based\nTrustworthiness\nEvaluation of\nAutonomous Cyber-\nPhysical Production\nSystems: A\nSystematic Mapping\nStudy", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Model-based Trustworthiness Evaluation of Autonomous Cyber-Physical Production Systems: A Systematic Mapping Study", "x": -0.0072612972343010914, "y": -0.32192109285445986}, {"color": "#97c2fc", "id": 3, "label": "Survey and Practice\non Architecture and\nDeployment Method of\nDigital Twin System\nfor Intelligent\nSubstation", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Survey and Practice on Architecture and Deployment Method of Digital Twin System for Intelligent Substation", "x": -0.22121220245290746, "y": 0.1205185107708454}, {"color": "#97c2fc", "id": 4, "label": "Simulation Method in\nAutomotive, Aviation\nand Maritime\nIndustries for\nDigital Twin: A\nBrief Survey", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Simulation Method in Automotive, Aviation and Maritime Industries for Digital Twin: A Brief Survey", "x": 0.3521962377097228, "y": -0.10736551566462618}, {"color": "#97c2fc", "id": 5, "label": "Digital twin for\nship life-cycle: A\ncritical systematic\nreview", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Digital twin for ship life-cycle: A critical systematic review", "x": 0.036009094502834245, "y": -0.01730087147479731}, {"color": "#97c2fc", "id": 6, "label": "Digital Twins for\ncities: Analyzing\nthe gap between\nconcepts and current\nimplementations with\na specific focus on\ndata integration", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Digital Twins for cities: Analyzing the gap between concepts and current implementations with a specific focus on data integration", "x": 0.20507124810790417, "y": 0.11884367773548013}, {"color": "#97c2fc", "id": 7, "label": "Detecting latent\ntopics and trends of\ndigital twins in\nhealthcare: A\nstructural topic\nmodel-based\nsystematic review", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Detecting latent topics and trends of digital twins in healthcare: A structural topic model-based systematic review", "x": 0.1734419146457908, "y": 0.22462901535779758}, {"color": "#97c2fc", "id": 9, "label": "Survey on Digital\nTwins: From concepts\nto applications", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Survey on Digital Twins: From concepts to applications", "x": 0.044231982278654915, "y": 0.05151253733549348}, {"color": "#97c2fc", "id": 10, "label": "Architecting Digital\nTwins", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Architecting Digital Twins", "x": -0.0525410103112929, "y": -0.13786232984086294}, {"color": "#97c2fc", "id": 11, "label": "How Can Digital\nTwins Support the\nNet Zero Vision?", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "How Can Digital Twins Support the Net Zero Vision?", "x": -0.025243653245304098, "y": 0.19306956439280112}, {"color": "#97c2fc", "id": 12, "label": "Cognitive Digital\nTwin Enabling Smart\nProduct-Services\nSystems: A\nLiterature Review", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Cognitive Digital Twin Enabling Smart Product-Services Systems: A Literature Review", "x": -0.3290227624801238, "y": 0.0882654730063811}, {"color": "#97c2fc", "id": 13, "label": "A REVIEW OF DIGITAL\nTWIN APPLICATIONS IN\nCONSTRUCTION", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "A REVIEW OF DIGITAL TWIN APPLICATIONS IN CONSTRUCTION", "x": -0.09788899068410509, "y": 0.08768820567277084}, {"color": "#97c2fc", "id": 14, "label": "Blockchain-Based\nDigital Twins:\nResearch Trends,\nIssues, and Future\nChallenges", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Blockchain-Based Digital Twins: Research Trends, Issues, and Future Challenges", "x": -0.1325013001136305, "y": -0.02043040911923152}, {"color": "#97c2fc", "id": 15, "label": "Service Computing\nfor Industry 4.0:\nState of the Art,\nChallenges, and\nResearch\nOpportunities", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Service Computing for Industry 4.0: State of the Art, Challenges, and Research Opportunities", "x": -0.06931756391623628, "y": -0.06691319299994751}, {"color": "#97c2fc", "id": 16, "label": "Designing solutions\nwith the product-\nservice systems\ndigital twin: What\nis now and what is\nnext?", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Designing solutions with the product-service systems digital twin: What is now and what is next?", "x": 0.025702689190297556, "y": -0.0821624537156647}, {"color": "#97c2fc", "id": 17, "label": "HCI and Digital\nTwins - A Critical\nLook: A Literature\nReview", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "HCI and Digital Twins - A Critical Look: A Literature Review", "x": -0.025404480809592817, "y": 0.04499355683307935}, {"color": "#97c2fc", "id": 18, "label": "Study Cybersecurity\nof Cyber Physical\nSystem in the\nVirtual Environment:\nA Survey and New\nDirection", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Study Cybersecurity of Cyber Physical System in the Virtual Environment: A Survey and New Direction", "x": -0.22881045978397416, "y": -0.15134270537834624}, {"color": "#97c2fc", "id": 19, "label": "A survey for image\nbased methods in\nconstruction: from\nimages to digital\ntwins", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "A survey for image based methods in construction: from images to digital twins", "x": 1.0, "y": 0.6172693660457141}, {"color": "#97c2fc", "id": 20, "label": "A Computer Science\nPerspective on\nDigital\nTransformation in\nProduction", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "A Computer Science Perspective on Digital Transformation in Production", "x": 0.08735593871398552, "y": -0.15457311619868988}, {"color": "#97c2fc", "id": 21, "label": "Survey on Cloud\nRobotics\nArchitecture and\nModel-Driven\nReference\nArchitecture for\nDecentralized\nMulticloud\nHeterogeneous-\nRobotics Platform", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Survey on Cloud Robotics Architecture and Model-Driven Reference Architecture for Decentralized Multicloud Heterogeneous-Robotics Platform", "x": -0.36298254340822117, "y": -0.08371934529703082}, {"color": "#97c2fc", "id": 22, "label": "A Bibliometric\nAnalysis on Model-\nbased Systems\nEngineering", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "A Bibliometric Analysis on Model-based Systems Engineering", "x": -0.6479248544611138, "y": -0.6399823029103544}, {"color": "#97c2fc", "id": 25, "label": "Model-driven system-\nperformance\nengineering for\ncyber-physical\nsystems", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Model-driven system-performance engineering for cyber-physical systems", "x": -0.18634059787320745, "y": -0.216332253956145}, {"color": "#97c2fc", "id": 26, "label": "Leveraging system\ncomplexity for\nimprovement", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Leveraging system complexity for improvement", "x": 0.31770431263153515, "y": 0.48654713975347924}, {"color": "#97c2fc", "id": 27, "label": "Enablers and\nbarriers to the\nimplementation of\ndigital twins in the\nprocess industry: A\nsystematic\nliterature review", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Enablers and barriers to the implementation of digital twins in the process industry: A systematic literature review", "x": 0.16523118855572194, "y": -0.07257373282743339}, {"color": "#97c2fc", "id": 28, "label": "Systematization of\nDigital Twins:\nOntology and\nConceptual Framework", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Systematization of Digital Twins: Ontology and Conceptual Framework", "x": -0.1148925539391133, "y": 0.04132619221691654}, {"color": "#97c2fc", "id": 29, "label": "Cloud-Based Battery\nDigital Twin\nMiddleware Using\nModel-Based\nDevelopment", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Cloud-Based Battery Digital Twin Middleware Using Model-Based Development", "x": -0.18586647480591578, "y": -0.4388595334767722}, {"color": "#97c2fc", "id": 30, "label": "On digital twin\ncondition monitoring\napproach for\ndrivetrains in\nmarine applications", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "On digital twin condition monitoring approach for drivetrains in marine applications", "x": -0.13819957161367433, "y": 0.22971432998417285}, {"color": "#97c2fc", "id": 31, "label": "Reference Framework\nfor Digital Twins\nwithin Cyber-\nPhysical Systems", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Reference Framework for Digital Twins within Cyber-Physical Systems", "x": -0.1199613570532692, "y": -0.12177960101845348}]);
+                  edges = new vis.DataSet([{"from": 1, "title": "4", "to": 6, "width": 4}, {"from": 1, "title": "1", "to": 7, "width": 1}, {"from": 1, "title": "1", "to": 19, "width": 1}, {"from": 2, "title": "11", "to": 10, "width": 11}, {"from": 2, "title": "2", "to": 18, "width": 2}, {"from": 2, "title": "1", "to": 5, "width": 1}, {"from": 2, "title": "1", "to": 16, "width": 1}, {"from": 2, "title": "1", "to": 27, "width": 1}, {"from": 3, "title": "6", "to": 13, "width": 6}, {"from": 3, "title": "5", "to": 28, "width": 5}, {"from": 3, "title": "3", "to": 11, "width": 3}, {"from": 3, "title": "2", "to": 17, "width": 2}, {"from": 3, "title": "2", "to": 30, "width": 2}, {"from": 3, "title": "1", "to": 5, "width": 1}, {"from": 3, "title": "1", "to": 9, "width": 1}, {"from": 3, "title": "1", "to": 10, "width": 1}, {"from": 3, "title": "1", "to": 14, "width": 1}, {"from": 3, "title": "1", "to": 15, "width": 1}, {"from": 3, "title": "1", "to": 18, "width": 1}, {"from": 3, "title": "1", "to": 21, "width": 1}, {"from": 3, "title": "1", "to": 25, "width": 1}, {"from": 4, "title": "5", "to": 5, "width": 5}, {"from": 4, "title": "1", "to": 6, "width": 1}, {"from": 4, "title": "1", "to": 20, "width": 1}, {"from": 5, "title": "7", "to": 9, "width": 7}, {"from": 5, "title": "7", "to": 17, "width": 7}, {"from": 5, "title": "6", "to": 14, "width": 6}, {"from": 5, "title": "6", "to": 16, "width": 6}, {"from": 5, "title": "6", "to": 28, "width": 6}, {"from": 5, "title": "5", "to": 13, "width": 5}, {"from": 5, "title": "4", "to": 15, "width": 4}, {"from": 5, "title": "4", "to": 31, "width": 4}, {"from": 5, "title": "3", "to": 10, "width": 3}, {"from": 5, "title": "3", "to": 30, "width": 3}, {"from": 5, "title": "2", "to": 6, "width": 2}, {"from": 5, "title": "2", "to": 18, "width": 2}, {"from": 5, "title": "2", "to": 20, "width": 2}, {"from": 5, "title": "2", "to": 27, "width": 2}, {"from": 5, "title": "1", "to": 11, "width": 1}, {"from": 5, "title": "1", "to": 25, "width": 1}, {"from": 6, "title": "4", "to": 9, "width": 4}, {"from": 6, "title": "3", "to": 11, "width": 3}, {"from": 6, "title": "3", "to": 17, "width": 3}, {"from": 6, "title": "1", "to": 7, "width": 1}, {"from": 6, "title": "1", "to": 10, "width": 1}, {"from": 6, "title": "1", "to": 13, "width": 1}, {"from": 6, "title": "1", "to": 14, "width": 1}, {"from": 6, "title": "1", "to": 15, "width": 1}, {"from": 6, "title": "1", "to": 16, "width": 1}, {"from": 6, "title": "1", "to": 20, "width": 1}, {"from": 6, "title": "1", "to": 25, "width": 1}, {"from": 6, "title": "1", "to": 26, "width": 1}, {"from": 6, "title": "1", "to": 27, "width": 1}, {"from": 7, "title": "3", "to": 17, "width": 3}, {"from": 7, "title": "2", "to": 10, "width": 2}, {"from": 7, "title": "2", "to": 11, "width": 2}, {"from": 7, "title": "1", "to": 9, "width": 1}, {"from": 7, "title": "1", "to": 13, "width": 1}, {"from": 7, "title": "1", "to": 20, "width": 1}, {"from": 7, "title": "1", "to": 26, "width": 1}, {"from": 9, "title": "6", "to": 10, "width": 6}, {"from": 9, "title": "6", "to": 17, "width": 6}, {"from": 9, "title": "4", "to": 16, "width": 4}, {"from": 9, "title": "3", "to": 13, "width": 3}, {"from": 9, "title": "3", "to": 14, "width": 3}, {"from": 9, "title": "3", "to": 20, "width": 3}, {"from": 9, "title": "3", "to": 28, "width": 3}, {"from": 9, "title": "2", "to": 27, "width": 2}, {"from": 9, "title": "2", "to": 31, "width": 2}, {"from": 9, "title": "1", "to": 12, "width": 1}, {"from": 9, "title": "1", "to": 15, "width": 1}, {"from": 9, "title": "1", "to": 18, "width": 1}, {"from": 9, "title": "1", "to": 25, "width": 1}, {"from": 9, "title": "1", "to": 26, "width": 1}, {"from": 10, "title": "7", "to": 14, "width": 7}, {"from": 10, "title": "6", "to": 16, "width": 6}, {"from": 10, "title": "5", "to": 17, "width": 5}, {"from": 10, "title": "4", "to": 15, "width": 4}, {"from": 10, "title": "4", "to": 20, "width": 4}, {"from": 10, "title": "4", "to": 31, "width": 4}, {"from": 10, "title": "3", "to": 12, "width": 3}, {"from": 10, "title": "3", "to": 28, "width": 3}, {"from": 10, "title": "3", "to": 29, "width": 3}, {"from": 10, "title": "2", "to": 21, "width": 2}, {"from": 10, "title": "2", "to": 25, "width": 2}, {"from": 10, "title": "2", "to": 27, "width": 2}, {"from": 10, "title": "1", "to": 13, "width": 1}, {"from": 10, "title": "1", "to": 18, "width": 1}, {"from": 11, "title": "8", "to": 13, "width": 8}, {"from": 11, "title": "4", "to": 17, "width": 4}, {"from": 11, "title": "3", "to": 28, "width": 3}, {"from": 11, "title": "3", "to": 30, "width": 3}, {"from": 11, "title": "2", "to": 14, "width": 2}, {"from": 11, "title": "1", "to": 12, "width": 1}, {"from": 11, "title": "1", "to": 15, "width": 1}, {"from": 11, "title": "1", "to": 16, "width": 1}, {"from": 11, "title": "1", "to": 27, "width": 1}, {"from": 12, "title": "2", "to": 28, "width": 2}, {"from": 12, "title": "1", "to": 14, "width": 1}, {"from": 12, "title": "1", "to": 17, "width": 1}, {"from": 13, "title": "9", "to": 28, "width": 9}, {"from": 13, "title": "8", "to": 31, "width": 8}, {"from": 13, "title": "5", "to": 17, "width": 5}, {"from": 13, "title": "4", "to": 14, "width": 4}, {"from": 13, "title": "4", "to": 16, "width": 4}, {"from": 13, "title": "4", "to": 30, "width": 4}, {"from": 13, "title": "3", "to": 15, "width": 3}, {"from": 13, "title": "1", "to": 18, "width": 1}, {"from": 13, "title": "1", "to": 21, "width": 1}, {"from": 13, "title": "1", "to": 25, "width": 1}, {"from": 14, "title": "5", "to": 17, "width": 5}, {"from": 14, "title": "5", "to": 28, "width": 5}, {"from": 14, "title": "3", "to": 15, "width": 3}, {"from": 14, "title": "3", "to": 18, "width": 3}, {"from": 14, "title": "3", "to": 20, "width": 3}, {"from": 14, "title": "2", "to": 16, "width": 2}, {"from": 14, "title": "2", "to": 21, "width": 2}, {"from": 14, "title": "2", "to": 25, "width": 2}, {"from": 14, "title": "2", "to": 30, "width": 2}, {"from": 14, "title": "2", "to": 31, "width": 2}, {"from": 15, "title": "4", "to": 16, "width": 4}, {"from": 15, "title": "4", "to": 28, "width": 4}, {"from": 15, "title": "2", "to": 17, "width": 2}, {"from": 15, "title": "2", "to": 20, "width": 2}, {"from": 15, "title": "2", "to": 21, "width": 2}, {"from": 15, "title": "2", "to": 25, "width": 2}, {"from": 16, "title": "4", "to": 17, "width": 4}, {"from": 16, "title": "4", "to": 28, "width": 4}, {"from": 16, "title": "3", "to": 31, "width": 3}, {"from": 16, "title": "2", "to": 20, "width": 2}, {"from": 16, "title": "2", "to": 27, "width": 2}, {"from": 16, "title": "1", "to": 18, "width": 1}, {"from": 17, "title": "6", "to": 28, "width": 6}, {"from": 17, "title": "4", "to": 31, "width": 4}, {"from": 17, "title": "3", "to": 20, "width": 3}, {"from": 17, "title": "3", "to": 27, "width": 3}, {"from": 17, "title": "3", "to": 30, "width": 3}, {"from": 17, "title": "1", "to": 18, "width": 1}, {"from": 17, "title": "1", "to": 21, "width": 1}, {"from": 17, "title": "1", "to": 25, "width": 1}, {"from": 18, "title": "1", "to": 20, "width": 1}, {"from": 20, "title": "2", "to": 25, "width": 2}, {"from": 21, "title": "1", "to": 25, "width": 1}, {"from": 22, "title": "1", "to": 25, "width": 1}, {"from": 25, "title": "2", "to": 28, "width": 2}, {"from": 27, "title": "2", "to": 28, "width": 2}, {"from": 27, "title": "2", "to": 31, "width": 2}, {"from": 28, "title": "5", "to": 30, "width": 5}, {"from": 28, "title": "4", "to": 31, "width": 4}, {"from": 29, "title": "3", "to": 31, "width": 3}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"configure": {"enabled": false}, "nodes": {"font": {"size": 15}}, "edges": {"smooth": true, "color": {"opacity": 0.25}}, "physics": {"enabled": true, "forceAtlas2Based": {"springLength": 100}, "solver": "forceAtlas2Based"}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
