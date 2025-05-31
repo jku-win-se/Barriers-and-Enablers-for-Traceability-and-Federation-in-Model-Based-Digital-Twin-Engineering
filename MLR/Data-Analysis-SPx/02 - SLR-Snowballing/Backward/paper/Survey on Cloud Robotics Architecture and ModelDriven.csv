@@ -1,0 +1,57 @@
+Title,EID
+A comprehensive survey of recent trends in cloud robotics architectures and applications,85056406216
+"A distributed architecture for supervision of autonomous multi-robot missions: Application to air-sea scenarios, {eid: 84982299368, doi: 10.1007/s10514-016-9603-z}>, <Edge-enabled autonomous navigation and computer vision as a service: A study on mobile robots onboard energy consumption and computing requirements",85089108451
+A framework for analysis and design of software reference architectures,84856028851
+A Hadoop based framework to process geo-distributed big data,84979790842
+"A reference architecture for social head gaze generation in social robotics, {eid: 84947079556, doi: 10.1007/s12369-015-0315-x}>, <Executing robot task models in dynamic environments",85041442648
+A requirements driven digital twin framework: Specification and opportunities,85086995372
+A survey of research on cloud robotics and automation,84924680020
+"A survey on cloud computing security: Issues, threats and solution",84987852363
+Application profiling in hierarchical Hadoop for geo-distributed computing environments,84985991424
+Automating big data analysis based on deep learning generation by automatic service composition,85079284060
+"Borg, omega, and kubernetes",84960969836
+Building a virtual system of systems using docker swarm in multiple clouds,85006384925
+Building knowledge-enabled cloud robotics applications using the ubiquitous network robot platform,84893733984
+"CAPER: A crossapplication permissioned blockchain, {eid: 85080339886, doi: 10.14778/3342263.3342275}>, <Towards a unified taxonomy and architecture of cloud frameworks",84869395726
+Cloud robotics: A software architecture,84994052340
+Cloud robotics: Current status and open issues,84979798659
+"Constraintdriven dynamic workflow for automation of big data analytics based on GraphPlan, {eid: 85032354849, doi: 10.1109/ICWS.2017.120}>, <Big data analytic service discovery using social service network with domain ontology and workflow awareness, {eid: 84990967375, doi: 10.1109/ICWS.2016.49}>, <QoS and customizable transaction-aware selection for big data analytics on automatic service composition",85032390374
+Control-data separation with decentralized edge control in fog-assisted uplink communications,85043779177
+Cooperative heterogeneous multirobot systems: A survey,85065747184
+Data management in industry 4.0: State of the art and open challenges,85070288034
+"DAvinCi: A cloud computing framework for service robots, {eid: 77955831617, doi: 10.1109/ROBOT.2010.5509469}>, <Robot as a service in cloud computing, {eid: 78449242569, doi: 10.1109/SOSE.2010.44}>, <Robots as-A-service in cloud computing: Search and rescue in large-scale disasters case study, {eid: 85046948076, doi: 10.1109/CCNC.2018.8319200}>, <ROSLink: Bridging ROS with the Internet-of-Things for cloud robotics, {eid: 85019669935, doi: 10.1007/978-3-319-54927-9_8}>, <Cloud robotics: Architecture, challenges and applications",84861325199
+Design of a robotic as a service platform to perform rehabilitation therapies,85079102745
+"Digital twindriven product design, manufacturing and service with big data",85015707925
+Edge-fog cloud: A distributed cloud for Internet of Things computations,85017198926
+End-toend optimization for geo-distributed MapReduce,84986550276
+"From industry 4.0 to society 4.0, there and back",85039034381
+"Hybrid robot-as-aservice (RaaS) platform (using MQTT and CoAP), {eid: 85074816758, doi: 10.1109/iThings/GreenCom/CPSCom/SmartData.2019.00171}>, <Data acquisition framework for cloud robotics, {eid: 85077768182, doi: 10.1109/ICAwST.2019.8923436}>, <Fog-enabled multi-robot systems, {eid: 85048094747, doi: 10.1109/CFEC.2018.8358727}>, <A knowledge interchange format (KIF) for robots in cloud, {eid: 85081161989, doi: 10.1109/ICCES45898.2019.9002191}>, <Cloud-based robotic system for crowd control in smart cities using hybrid intelligent generic algorithm, {eid: 85081916718, doi: 10.1007/s12652-020-01758-w}>, <Deep reinforcement learning for autonomous Internet of Things: Model, applications and challenges, {eid: 85089540507, doi: 10.1109/COMST.2020.2988367}>, <A domain-specific software architecture for adaptive intelligent systems, {eid: 0029288791, doi: 10.1109/32.385968}>, <Reference architecture for robot teleoperation: Development details and practical use, {eid: 0035310607, doi: 10.1016/S0967-0661(00)00121-0}>, <Towards a taxonomy of services for developing service-oriented robotic systems",84906348250
+"Improving high-impact numerical weather prediction with lidar and drone observations, {eid: 85088749302, doi: 10.1175/BAMS-D-19-0119.1}>, <A survey on blockchain-based Internet service architecture: Requirements, challenges, trends, and future",85068314861
+Industry 4.0,84926457128
+"Integrating apache airavata with docker, marathon, and mesos",84962920541
+Mapping the business model canvas to ArchiMate,84863568262
+MBSEsec: Model-based systems engineering method for creating secure systems,85083444957
+"Model-driven separation of concerns for service robotics, {eid: 85015193041, doi: 10.1145/3023147.3023151}>, <A reference architecture for deploying component-based robot software and comparison with existing tools, {eid: 85049632320, doi: 10.1109/IRC.2018.00026}>, <A reference architecture for satellite control systems, {eid: 85060922715, doi: 10.1007/s11334-019-00322-w}>, <Material-integrated cluster computing in selfadaptive robotic materials using mobile multi-agent systems, {eid: 85059562703, doi: 10.1007/s10586-018-02894-x}>, <Multipotent systems: Combining planning, self-organization, and reconfiguration in modular robot ensembles, {eid: 85058911392, doi: 10.3390/s19010017}>, <An implementing framework for Holonic manufacturing control with multiple robotvision stations, {eid: 67349215793, doi: 10.1016/j.engappai.2009.03.001}>, <A generic controller architecture for intelligent robotic systems, {eid: 78649317088, doi: 10.1016/j.rcim.2010.07.013}>, <Human exploration of mars, design reference architecture 5.0, {eid: 77952821004, doi: 10.1109/AERO.2010.5446736}>, <Lunar in-situ resource utilization in the ISECG human lunar exploration reference architecture",85103073332
+MyBot: Cloud-based service robot using service-oriented architecture,85090182985
+"None, {eid: 84892029522, doi: 10.1007/978-3-540-68899-0}>, <Realising interoperability between OPC UA and OCF",85056532049
+"QoS-aware rule-based Trafficefficient multiobjective service selection in big data space, {eid: 85052636646, doi: 10.1109/ACCESS.2018.2867633}>, <Technology update on the unified architecture framework (UAF)",85099357704
+Realizing the global edge cloud,85047301267
+"Reliable cloud-based robot services, {eid: 84893564549, doi: 10.1109/IECON.2013.6700526}>, <Reliable, cloud-based communication for multi-robot systems, {eid: 84906516213, doi: 10.1109/TePRA.2014.6869142}>, <Cloud-based robotic system: Architecture framework and deployment models",85103072014
+"Representation and exchange of knowledge about actions, objects, and environments in the RoboEarth framework",84892601570
+"Research on SOA-based architecture of collaborative product commerce, {eid: 84864276075, doi: 10.1109/ISRA.2012.6219120}>, <Modeling and reusing robotic software architectures: The HyperFlex toolchain, {eid: 84929193296, doi: 10.1109/ICRA.2014.6907806}>, <RoboEarth, {eid: 79959502591, doi: 10.1109/MRA.2011.941632}>, <Server-sided automatic map transformation in RoboEarth",84890062940
+"Resource management in fog/edge computing: A survey on architectures, infrastructure, and algorithms",85072407747
+RESTful industrial communication with OPC UA,85012057836
+"RoboEarth semantic mapping: A cloud enabled knowledge-based approach, {eid: 85027971073, doi: 10.1109/TASE.2014.2377791}>, <Rapyuta: A cloud robotics platform, {eid: 85027933046, doi: 10.1109/TASE.2014.2329556}>, <Cloud based centralized task control for human domain multi-robot operations, {eid: 84952982944, doi: 10.1007/s11370-015-0185-y}>, <Industry 5.0_A human-centric solution, {eid: 85070751081, doi: 10.3390/su11164371}>, <Consider the human work experience when integrating robotics in the workplace, {eid: 85063982477, doi: 10.1109/HRI.2019.8673139}>, <SmartCityWare: A service-oriented middleware for cloud and fog enabled smart city services",85028928287
+ROS: An open-source robot operating system,77957352104
+"Science, technology and innovation ecosystem transformation toward society 5.0",85070715292
+Society 5.0: Aiming for a new human-centered society,85074406779
+Society 5.0: For human security and well-being,85051077863
+Solutions to scalability of blockchain: A survey,85079765706
+"Survey on fog computing: Architecture, key technologies, applications and open issues",85029368813
+The Hadoop distributed file system,77957838299
+The Hadoop distributed file system: Architecture and design,70450136675
+UAF: A generic OPC unified architecture framework,84872197061
+Ultra-ne grain landscape-scale quantification of dryland vegetation structure with droneacquired structure-from-motion photogrammetry,84971645573
+Using a systems of systems modeling approach for developing industrial Internet of Things applications,85028533320
+"Using game development to teach software architecture, {eid: 80052679924, doi: 10.1155/2011/920873}>, <Multi-modal visual attention for robotics active vision systems_A reference architecture",84863922490
+Working on the edge,85073281200
