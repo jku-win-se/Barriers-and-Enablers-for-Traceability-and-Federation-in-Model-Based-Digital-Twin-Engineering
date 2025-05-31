@@ -10,11 +10,10 @@ It contains every artefact needed to reproduce the **Multi-Vocal Literature Revi
   <figcaption>Figure 1 – End-to-end protocol followed in the study</figcaption>
 </figure>
 
-<p align="center">
-  <img src="img/search-selection.png" alt="Search &amp; Selection workflow"/>
-  <br/>
+<figure style="text-align:center">
+  <img src="img/search-selection.png" alt="Search &amp; Selection workflow">
   <em>Figure 2 – Search-and-selection workflow numbers</em>
-</p>
+</figure>
 
 ---
 
