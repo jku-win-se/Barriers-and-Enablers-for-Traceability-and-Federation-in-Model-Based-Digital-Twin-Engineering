@@ -1,18 +1,18 @@
 # Replication Package for the paper "Barriers and Enablers for Traceability and Federation in Model-Based Digital Twin Engineering"
 
-This repository accompanies the paper  
-“**Barriers and Enablers for Traceability and Federation in Model-Based Digital-Twin Engineering**”.
+This repository accompanies the paper “**Barriers and Enablers for Traceability and Federation in Model-Based Digital-Twin Engineering**”, submitted to the "
+Information and Software Technology" Journal, special issue on "Model- and Data-driven Digital Twins".
  
 It contains every artefact needed to reproduce the **Multi-Vocal Literature Review (MLR)**, the **industry survey**, and all data-analysis pipelines.
 
 <p align="center">
-  <img src="img/protocol.pdf" alt="MLR protocol schematic" width="60%"/>
+  <img src="img/protocol.png" alt="MLR protocol schematic" width="60%"/>
   <br/>
   <em>Figure 1 – End-to-end protocol followed in the study</em>
 </p>
 
 <p align="center">
-  <img src="img/search-selection.pdf" alt="Search &amp; Selection workflow" width="75%"/>
+  <img src="img/search-selection.png" alt="Search &amp; Selection workflow" width="75%"/>
   <br/>
   <em>Figure 2 – Automated search-and-selection workflow</em>
 </p>
