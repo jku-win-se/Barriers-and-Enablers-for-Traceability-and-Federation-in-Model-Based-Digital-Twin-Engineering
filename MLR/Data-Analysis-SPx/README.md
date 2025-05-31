@@ -16,5 +16,5 @@ This folder contains the **step-by-step analysis pipeline** used to transform ra
 | **00 – After Query** | Import CSVs exported from each digital library; deduplicate and harmonise metadata. | 
 | **01 – After IC/EC** | Apply Inclusion/Exclusion criteria; compute basic descriptive analysis. |
 | **02 – Snowballing** | Perform backward and forward snowballing. |
-| **03 – Selected** | Freeze the *final* list of primary studies; export canonical BibTeX. |
-| **04 - SLR-Selected after Data Extraction** | Join coded variables & quality scores; generate all stats/plots. |
+| **03 – Selected** | Freeze the *final* list of primary studies for full-paper reading. |
+| **04 - SLR-Selected after Data Extraction** | Generate all stats/plots from the final selected papers. |
