@@ -11,6 +11,11 @@ It contains every artefact needed to reproduce the **Multi-Vocal Literature Revi
   <em>Figure 1 – End-to-end protocol followed in the study</em>
 </p>
 
+<figure>
+  <img src="img/protocol.png" alt="MLR protocol schematic">
+  <figcaption>Figure 1 – End-to-end protocol followed in the study</figcaption>
+</figure>
+
 <p align="center">
   <img src="img/search-selection.png" alt="Search &amp; Selection workflow"/>
   <br/>
