@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 1000px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "id": 0, "label": "Cloud-Based Battery\nDigital Twin\nMiddleware Using\nModel-Based\nDevelopment", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Cloud-Based Battery Digital Twin Middleware Using Model-Based Development", "x": 0.9971957902271147, "y": -0.13320047668327747}, {"color": "#97c2fc", "id": 225, "label": "CPSAML: A Language\nand Code Generation\nFramework for\nDigital Twin based\nMonitoring of Mobile\nCyber-Physical\nSystems", "labelHighlightBold": true, "shape": "dot", "size": 5.0, "title": "CPSAML: A Language and Code Generation Framework for Digital Twin based Monitoring of Mobile Cyber-Physical Systems", "x": -0.32461078176501196, "y": 0.6181131181245243}, {"color": "#97c2fc", "id": 162, "label": "Enablers and\nbarriers to the\nimplementation of\ndigital twins in the\nprocess industry: A\nsystematic\nliterature review", "labelHighlightBold": true, "shape": "dot", "size": 15.0, "title": "Enablers and barriers to the implementation of digital twins in the process industry: A systematic literature review", "x": -0.8959680057759487, "y": -0.3638465402364177}, {"color": "#97c2fc", "id": 1, "label": "Environment for\nEducation on\nIndustry 4.0", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Environment for Education on Industry 4.0", "x": 0.538014594157795, "y": 0.7689279840546377}, {"color": "#97c2fc", "id": 231, "label": "Survey on Digital\nTwins: From concepts\nto applications", "labelHighlightBold": true, "shape": "dot", "size": 5.0, "title": "Survey on Digital Twins: From concepts to applications", "x": -0.32211783545973843, "y": -0.68542856224921}, {"color": "#97c2fc", "id": 232, "label": "TwinOps - DevOps\nmeets model-based\nengineering and\ndigital twins for\nthe engineering of\nCPS", "labelHighlightBold": true, "shape": "dot", "size": 25.0, "title": "TwinOps - DevOps meets model-based engineering and digital twins for the engineering of CPS", "x": -0.6376142017662917, "y": 0.5929608320559138}, {"color": "#97c2fc", "id": 201, "label": "A Model-Driven\nPlatform for\nEngineering Holistic\nDigital Twins", "labelHighlightBold": true, "shape": "dot", "size": 5.0, "title": "A Model-Driven Platform for Engineering Holistic Digital Twins", "x": -0.1914863608478459, "y": -0.053353296138399446}, {"color": "#97c2fc", "id": 233, "label": "Reference Framework\nfor Digital Twins\nwithin Cyber-\nPhysical Systems", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Reference Framework for Digital Twins within Cyber-Physical Systems", "x": 0.2567477905933778, "y": -1.0}, {"color": "#97c2fc", "id": 299, "label": "Formally verified\nfmi enabled external\ndata broker:\nRabbitmq FMU", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Formally verified fmi enabled external data broker: Rabbitmq FMU", "x": 0.8587477018503883, "y": 0.31907615121750205}, {"color": "#97c2fc", "id": 12, "label": "Architecting Digital\nTwins", "labelHighlightBold": true, "shape": "dot", "size": 15.0, "title": "Architecting Digital Twins", "x": -0.08344800138832288, "y": 0.0034715067874926645}, {"color": "#97c2fc", "id": 204, "label": "Dynamic Runtime\nIntegration of New\nModels in Digital\nTwins", "labelHighlightBold": true, "shape": "dot", "size": 5.0, "title": "Dynamic Runtime Integration of New Models in Digital Twins", "x": 0.11261464687392293, "y": 0.4597186490406268}, {"color": "#97c2fc", "id": 205, "label": "Model-Based System\nEngineering of the\nInternet of Things:\nA Bibliometric\nLiterature Analysis", "labelHighlightBold": true, "shape": "dot", "size": 5.0, "title": "Model-Based System Engineering of the Internet of Things: A Bibliometric Literature Analysis", "x": -0.0009463168065943669, "y": -0.034934224499738604}, {"color": "#97c2fc", "id": 143, "label": "Model-based\nTrustworthiness\nEvaluation of\nAutonomous Cyber-\nPhysical Production\nSystems: A\nSystematic Mapping\nStudy", "labelHighlightBold": true, "shape": "dot", "size": 5.0, "title": "Model-based Trustworthiness Evaluation of Autonomous Cyber-Physical Production Systems: A Systematic Mapping Study", "x": -0.012428923386119974, "y": 0.09548694024227715}, {"color": "#97c2fc", "id": 17, "label": "Bibliometric\nAnalysis of Model-\nBased Systems\nEngineering: Past,\nCurrent, and Future", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Bibliometric Analysis of Model-Based Systems Engineering: Past, Current, and Future", "x": -0.13558007471265804, "y": -0.9098464724888313}, {"color": "#97c2fc", "id": 210, "label": "A Bibliometric\nAnalysis on Model-\nbased Systems\nEngineering", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "A Bibliometric Analysis on Model-based Systems Engineering", "x": 0.8228273104807838, "y": -0.7040306448878317}, {"color": "#97c2fc", "id": 244, "label": "Towards a Model-\nIntegrated Runtime\nMonitoring\nInfrastructure for\nCyber-Physical\nSystems", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "Towards a Model-Integrated Runtime Monitoring Infrastructure for Cyber-Physical Systems", "x": -0.14161907715059088, "y": 0.8806570456647048}, {"color": "#97c2fc", "id": 287, "label": "A Computer Science\nPerspective on\nDigital\nTransformation in\nProduction", "labelHighlightBold": true, "shape": "dot", "size": 10.0, "title": "A Computer Science Perspective on Digital Transformation in Production", "x": -0.8403282551242591, "y": 0.14622798999602693}]);
+                  edges = new vis.DataSet([{"arrows": "to", "from": 225, "title": "", "to": 232, "width": null}, {"arrows": "to", "from": 225, "title": "", "to": 244, "width": null}, {"arrows": "to", "from": 231, "title": "", "to": 233, "width": null}, {"arrows": "to", "from": 231, "title": "", "to": 162, "width": null}, {"arrows": "to", "from": 201, "title": "", "to": 12, "width": null}, {"arrows": "to", "from": 12, "title": "", "to": 162, "width": null}, {"arrows": "to", "from": 12, "title": "", "to": 0, "width": null}, {"arrows": "to", "from": 12, "title": "", "to": 232, "width": null}, {"arrows": "to", "from": 204, "title": "", "to": 299, "width": null}, {"arrows": "to", "from": 204, "title": "", "to": 232, "width": null}, {"arrows": "to", "from": 205, "title": "", "to": 210, "width": null}, {"arrows": "to", "from": 205, "title": "", "to": 17, "width": null}, {"arrows": "to", "from": 205, "title": "", "to": 232, "width": null}, {"arrows": "to", "from": 205, "title": "", "to": 287, "width": null}, {"arrows": "to", "from": 205, "title": "", "to": 1, "width": null}, {"arrows": "to", "from": 143, "title": "", "to": 12, "width": null}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {"configure": {"enabled": false}, "nodes": {"font": {"size": 15}}, "edges": {"smooth": true, "color": {"opacity": 0.25}}, "physics": {"enabled": true, "forceAtlas2Based": {"springLength": 100}, "solver": "forceAtlas2Based"}};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>
