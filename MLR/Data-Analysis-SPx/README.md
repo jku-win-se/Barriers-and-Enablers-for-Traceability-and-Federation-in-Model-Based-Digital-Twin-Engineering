@@ -5,11 +5,11 @@ This folder contains the **step-by-step analysis pipeline** used to transform ra
 ## Folder structure
 
 - Data-Analysis-SPx/
-	- 00–SLR-After-Query/:          **Raw search results (Scopus, IEEE, ACM, WoS)*
-	- 01–SLR-After-IC-EC/:          **After Inclusion/Exclusion criteria*
-	- 02–SLR-Snowballing/:          **Back‑ & Forward‑snowballing*
-	- 03–SLR-Selected/:             **Final paper set*
-	- 04–SLR-Selected-after-DEF/:   **Dataset enriched with coded variables*
+	- 00–SLR-After-Query/:          *Raw search results (Scopus, IEEE, ACM, WoS)*
+	- 01–SLR-After-IC-EC/:          *After Inclusion/Exclusion criteria*
+	- 02–SLR-Snowballing/:          *Back‑ & Forward‑snowballing*
+	- 03–SLR-Selected/:             *Final paper set*
+	- 04–SLR-Selected-after-DEF/:   *Dataset enriched with coded variables*
 
 | Stage | What happens here |
 |-------|-------------------|
