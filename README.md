@@ -6,13 +6,13 @@ Information and Software Technology" Journal, special issue on "Model- and Data-
 It contains every artefact needed to reproduce the **Multi-Vocal Literature Review (MLR)**, the **industry survey**, and all data-analysis pipelines.
 
 <p align="center">
-  <img src="img/protocol.png" alt="MLR protocol schematic" width="100%"/>
+  <img src="img/protocol.png" alt="MLR protocol schematic"/>
   <br/>
   <em>Figure 1 – End-to-end protocol followed in the study</em>
 </p>
 
 <p align="center">
-  <img src="img/search-selection.png" alt="Search &amp; Selection workflow" width="100%"/>
+  <img src="img/search-selection.png" alt="Search &amp; Selection workflow"/>
   <br/>
   <em>Figure 2 – Search-and-selection workflow numbers</em>
 </p>
