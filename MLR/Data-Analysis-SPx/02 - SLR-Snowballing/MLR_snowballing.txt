@@ -1,0 +1,175 @@
+Title
+A model-driven approach to enable the simulation of complex systems on distributed architectures
+An MBSE-based approach for the analysis of requirements towards engineering IT architectures
+Detecting Task Functional MRI Activation Using the Multiband Multiecho (MBME) Echo-Planar Imaging (EPI) Sequence
+Model management tools for models of different domains: A systematic literature review
+Model-Based Systemic Hazard Analysis Approach for Connected and Autonomous Vehicles and Case Study Application in Automatic Emergency Braking System
+Representing adaptation options in experimentable digital twins of production systems
+System of Systems Modelling: Recent work Review and a Path Forward
+Systematic literature review of system models for technical system development
+Value and benefits of model-based systems engineering (MBSE): Evidence from the literature
+Early Validation and Verification of System Behaviour in Model-based Systems Engineering: A Systematic Literature Review
+A case for integrated data processing in large-scale cyber-physical systems
+A compositional framework for systematic modeling language reuse
+A state-of-the-art survey of Digital Twin: techniques, engineering product lifecycle management and business innovation perspectives
+Blockchain-based privacy preservation for supply chains supporting lightweight multi-hop information accountability
+Characterising the Digital Twin: A systematic literature review
+Current research and future perspectives on human factors and ergonomics in Industry 4.0
+Designing a multi-sided data platform: findings from the International Data Spaces case
+Development of manufacturing execution systems in accordance with industry 4. 0 requirements: A review of standard-and ontologybased methodologies and tools
+DIGITAL MANUFACTURING TOOLS IN THE SIMULATION OF COLLABORATIVE ROBOTS: TOWARDS INDUSTRY 4.0
+Digital Twin in Industry: State-of-the-Art
+Digital Twin in the IoT Context: A Survey on Technical Features, Scenarios, and Architectural Models
+Easing the Conscience with OPC UA: An Internet-Wide Study on Insecure Deployments
+Edge cloud as an enabler for distributed AI in industrial IoT applications: The experience of the iotwins project
+Explainable artificial intelligence: Concepts, taxonomies, opportunities and challenges toward responsible AI
+Four Responsibility Gaps with Artificial Intelligence: Why they Matter and How to Address them
+How context and design shape human-robot trust and attributions
+Industrial Frameworks for Internet of Things: A Survey
+Model-driven digital twin construction: Synthesizing the integration of cyber-physical systems with their information systems
+Modeling languages in Industry 4.0: an extended systematic mapping study
+Private multi-hop accountability for supply chains
+Production Logistics Visibility - Perspectives, Principles and Prospects
+Secure End-to-End Sensing in Supply Chains
+The applications of industry 4. 0 technologies in manufacturing context: A systematic literature review
+What happens when decision support systems fail? ÅŒÄ†Ã¶ the importance of usability on performance in erroneous systems
+Digital twinning for productivity improvement opportunities with robotic process automation: Case of greenfield hospital
+On the Integration of Agents and Digital Twins in Healthcare
+Construction 4.0 in a narrow and broad sense: A systematic and comprehensive literature review
+Digital Twin and 3D Digital Twin: Concepts, Applications, and Challenges in Industry 4.0 for Digital Twin
+Digital Twin for Fault Detection and Diagnosis of Building Operations: A Systematic Review
+Digital twin technology for thermal comfort and energy efficiency in buildings: A state-of-the-art and future directions
+Digital Twin Technology in Built Environment: A Review of Applications, Capabilities and Challenges
+Digital Twin-Enabled Infrastructures: A Bibliometric Analysis-Based Review
+Geometric parameter updating in digital twin of built assets: A systematic literature review
+How the Convergence of Information Technology and Operational Technology Enables Digital Twin in Construction Industry: A Systematic Review
+Internet of Things (IoT), Building Information Modeling (BIM), and Digital Twin (DT) in Construction Industry: A Review, Bibliometric, and Network Analysis
+Methods for enabling real-time analysis in digital twins: A literature review
+Opportunities and Threats of Adopting Digital Twin in Construction Projects: A Review
+Product digital twins: An umbrella review and research agenda for understanding their value
+Review of Digital Twins for Constructed Facilities
+Review of reducing energy consumption and carbon emissions through digital twin in built environment
+The Role of BIM in Integrating Digital Twin in Building Construction: A Literature Review
+A Cyber Security Digital Twin for Critical Infrastructure Protection: The Intelligent Transport System Use Case
+A digital twin architecture to optimize productivity within controlled environment agriculture
+A digital twin-driven approach towards smart manufacturing: reduced energy consumption for a robotic cell
+A Modular Digital Twinning Framework for Safety Assurance of Collaborative Robotics
+A six-layer architecture for the digital twin: a manufacturing case study implementation
+A survey on digital twin: Definitions, characteristics, applications, and design implications
+An adapted model of cognitive digital twins for building lifecycle management
+An Aggregated Digital Twin Solution for Human-Robot Collaboration in Industry 4.0 Environments
+An open source approach to the design and implementation of Digital Twins for Smart Manufacturing
+Architecture Blueprint Enabling Distributed Digital Twins
+Blockchain-enabled digital twin collaboration platform for heterogeneous socialized manufacturing resource management
+Cloud-Based Battery Digital Twin Middleware Using Model-Based Development
+Cloud-Based Digital Twin for Robot Integration in Intelligent Manufacturing Systems
+Decision Support Based on Digital Twin Simulation: A Case Study
+Developing sensor signal-based digital twins for intelligent machine tools
+Digital Twin as a Service (DTaaS) in Industry 4.0: An Architecture Reference Model
+Digital Twin Based Real-time Production Logistics Synchronization System in a Multi-level Computing Architecture
+Digital twin based what-if simulation for energy management
+Digital Twin Consensus for Blockchain-Enabled Intelligent Transportation Systems in Smart Cities
+Digital Twin Data Pipeline Using MQTT in SLADTA
+Digital twin for geometric feature online inspection system of car body-in-white
+Digital twin in industry 4.0: Technologies, applications and challenges
+Digital twin integration in multi-agent cyber physical manufacturing systems
+Digital Twin of manufacturing systems: A case study on increasing the efficiency of reconfiguration
+Digital twin paradigm: A systematic literature review
+Digital Twin: Enabling Technologies, Challenges and Open Research
+Digital twin: Values, challenges and enablers from a modeling perspective
+Digital twin-based designing of the configuration, motion, control, and optimization model of a flow-type smart manufacturing system
+Digital twin-based framework for green building maintenance system
+Digital twin-driven 3D visualization monitoring and traceability system for general parts in continuous casting machine
+Edge computing enhanced digital twins for smart manufacturing
+Generic digital twin architecture for industrial energy systems
+Industry 4.0 reference architectures: State of the art and future trends
+Key-Components for Digital Twin Modeling with Granularity: Use Case Car-as-a-Service
+Machine Learning based Digital Twin Framework for Production Optimization in Petrochemical Industry
+Model-Driven Development of a Digital Twin for Injection Molding
+Modeling Digital Twin Data and Architecture: A Building Guide With FIWARE as Enabling Technology
+Real-time event-based platform for the development of digital twin applications
+Semantic microservice framework for digital twins
+Stateful stream processing for digital twins: Microservice-based kafka stream dsl
+Strengthening Digital Twin Applications based on Machine Learning for Complex Equipment
+Sustainability assessment of intelligent manufacturing supported by digital twin
+The Role of AI, Machine Learning, and Big Data in Digital Twinning: A Systematic Literature Review, Challenges, and Opportunities
+TiLA: Twin-in-the-loop architecture for cyber-physical production systems
+Toward a Web-Based Digital Twin Thermal Power Plant
+Towards a Model-Driven Architecture for Interactive Digital Twin Cockpits
+Utilising web-based digital twin to promote assembly line sustainability
+Value-Driven Robotic Digital Twins in Cyber-Physical Applications
+When digital twin meets network softwarization in the industrial iot: Real-time requirements case study
+A Systematic Literature Review of Recent Trends and Challenges in Digital Twin Implementation
+Digital Twin Approach for Operation and Maintenance of Transportation System—Systematic Review
+Digital Twins in Software Engineering—A Systematic Literature Review and Vision
+Leveraging generative AI for urban digital twins: a scoping review on the autonomous generation of urban data, scenarios, designs, and 3D city models for smart city advancement
+Systematic review of digital twin technology and applications
+The convergence of Digital Twins and Distributed Ledger Technologies: A systematic literature review and an architectural proposal
+The Role of Technology in Improving the Customer Experience in the Banking Sector: A Systematic Mapping Study
+A Review on Aging-Aware System Simulation for Plug-In Hybrids
+Digital twin in battery energy storage systems: Trends and gaps detection through association rule mining
+Digital twin in energy industry: Proposed robust digital twin for power plant and other complex capital-intensive large engineering systems
+Construction 4.0, Industry 4.0, and Building Information Modeling (BIM) for Sustainable Building Development within the Smart City
+Developing an efficient property valuation system using the LADM valuation information model: A Croatian case study
+Digitalizing planning culture: A change towards information model-based planning in Finland
+A digital-twin evaluation of Net Zero Energy Building for existing buildings
+Bullshit in the Sustainability and Transitions Literature: a Provocation
+Digital Technologies in Built Environment Projects: Review and Future Directions
+Digital Twin for Accelerating Sustainability in Positive Energy District: A Review of Simulation Tools and Applications
+Potential reconstruction design of an existing townhouse in Washington DC for approaching net zero energy building goal
+The 'Digital Twin' to enable the vision of precision cardiology
+A Semantic Framework with Humans in the Loop for Vulnerability-Assessment in Cyber-Physical Production Systems
+A Survey on Resilience in the IoT: Taxonomy, Classification, and Discussion of Resilience Mechanisms
+A systematic literature review of model-driven security engineering for cyber-physical systems
+A Systematic Mapping Study on the Role of Software Engineering in Enabling Society 5.0
+Architecting Digital Twins
+Artificial intelligence-based decision-making algorithms, internet of things sensing networks, and deep learning-assisted smart process management in cyber-physical production systems
+Attack Path Analysis for Cyber Physical Systems
+Cyber-physical security evaluation in manufacturing systems with a Bayesian game model
+Guidelines for including grey literature and conducting multivocal literature reviews in software engineering
+Lightweight Mutual Authentication and Privacy-Preservation Scheme for Intelligent Wearable Devices in Industrial-CPS
+Modelling availability risks of IT threats in smart factory networks - A modular Petri net approach
+Multi-paradigm modeling for cyberâ€“physical systems: A systematic mapping review
+Optimal replacement model for the physical component of safety critical smart-world CPSs
+Orthogonal Uncertainty Modeling in the Engineering of Cyber-Physical Systems
+Scanning the Industry 4.0: A Literature Review on Technologies for Manufacturing Systems
+Self-Adaptive Traffic Control Model With Behavior Trees and Reinforcement Learning for AGV in Industry 4.0
+Standardisation in Digital Twin Architectures in Manufacturing
+Towards trustworthy autonomous systems: A survey of taxonomies and future perspectives
+A survey of timing verification techniques for multi-core real-time systems
+An Empirical Survey-based Study into Industry Practice in Real-time Systems
+Big data for cyber physical systems in industry 4.0: a survey
+Driven by Data or Derived through Physics? A Review of Hybrid Physics Guided Machine Learning Techniques with Cyber-Physical System (CPS) Focus
+Improving Model Inference in Industry by Combining Active and Passive Learning
+Set-based design: The state-of-practice and research opportunities
+Simulation in the design and operation of manufacturing systems: state of the art and new trends
+A comprehensive survey of industry practice in real-time systems
+Design Space Exploration for Distributed Cyber-Physical Systems: State-of-the-art, Challenges, and Directions
+A Cross-Layer Secure and Energy-Efficient Framework for Internet of Things: A Comprehensive Survey
+Designing Human Digital Twins for Behaviour-Changing Therapy and Rehabilitation: A Systematic Review
+Trends in the global research on the relationship between cleaner production and industry 4.0: a bibliometric literature review
+A Survey of IIoT Protocols: A Measure of Vulnerability Risk Analysis Based on CVSS
+Architecture for Automation System Metrics Collection, Visualization and Data Engineering - HAMK Sheet Metal Center Building Automation Case Study
+Connectivity as a prior challenge in establishing CPPS on basis of heterogeneous IT-software environments
+Control as a Service: A Microservice Approach to Industry 4.0
+Core concepts, challenges, and future directions in blockchain: A centralized tutorial
+CPuS-IoT: A cyber-physical microservice and IoT-based framework for manufacturing assembly systems
+Enabling technologies of industry 4.0 and their global forerunners: An empirical study of the web of science database
+Framework of an IoT-based Industrial Data Management for Smart Manufacturing
+Microservice Orchestration for Process Control in Industry 4.0
+Operation Procedures of a Work-Center-Level Digital Twin for Sustainable and Smart Manufacturing
+Self-assemble-featured Internet of Things
+Service-oriented platform for smart operation of dyeing and finishing industry
+Tackling faults in the industry 4.0 era - a survey of machine-learning solutions and key aspects
+Understanding Service-Oriented Architecture (SOA): A systematic literature review and directions for further investigation
+A digital twin approach for fault diagnosis in distributed photovoltaic systems
+Control and Intelligent Optimization of a Photovoltaic (PV) Inverter System: A Review
+Cooperative heterogeneous multirobot systems: A survey
+Data management in industry 4.0: State of the art and open challenges
+Design of a Robotic as a Service Platform to Perform Rehabilitation Therapies
+MBSEsec: Model-based systems engineering method for creating secure systems
+Resource management in fog/Edge computing: A survey on architectures, infrastructure, and algorithms
+Science, technology and innovation ecosystem transformation toward society 5.0
+Solutions to Scalability of Blockchain: a Survey
+Recent advances in evolving computing paradigms: Cloud, edge, and fog technologies
+Understanding the challenges and novel architectural models of multi-cloud native applications – a systematic literature review
